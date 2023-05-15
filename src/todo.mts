@@ -2,6 +2,22 @@ import { User, UserProfile, UserTransaction } from './types.mjs';
 import { getAllUsers } from './utils/data.mjs';
 import { logger } from './utils/logger.mjs';
 
+export function task(store: Awaited<ReturnType<typeof getStore>>) {
+    // TODO: Leave one of the store method calls uncommented (when the method is implemented and run the code.
+
+    for (const user of store.users) {
+        logger.log(`Profile for user ${user.id}`, store.getProfileForUser(user.id));
+        // logger.log(`Transactions for user ${user.id}`, store.getTransactionsForUser(user.id).length);
+        // logger.log(`Account balance for user ${user.id}`, store.getAccountBalanceOfUser(user.id));
+        // logger.log(`Full profile for user ${user.id}`, store.getFullUserProfile(user.id));
+    }
+
+    // logger.log(`User with largest account balance`, store.getUserWithLargestAccountBalance());
+    // logger.log(`User with smallest account balance`, store.getUserWithSmallestAccountBalance());
+    // logger.log(`User with smallest positive account balance`, store.getUserWithSmallestPositiveAccountBalance());
+    // logger.log(`User with largest negative account balance`, store.getUserWithLargestNegativeAccountBalance());
+}
+
 export async function getStore() {
     const users: User[] = await getAllUsers();
 
@@ -86,20 +102,4 @@ export async function getStore() {
         getUserWithSmallestPositiveAccountBalance,
         getUserWithLargestNegativeAccountBalance,
     };
-}
-
-export function task(store: Awaited<ReturnType<typeof getStore>>) {
-    // TODO: Leave one of the store method calls uncommented (when the method is implemented and run the code.
-
-    for (const user of store.users) {
-        logger.log(`Profile for user ${user.id}`, store.getProfileForUser(user.id));
-        // logger.log(`Transactions for user ${user.id}`, store.getTransactionsForUser(user.id).length);
-        // logger.log(`Account balance for user ${user.id}`, store.getAccountBalanceOfUser(user.id));
-        // logger.log(`Full profile for user ${user.id}`, store.getFullUserProfile(user.id));
-    }
-
-    // logger.log(`User with largest account balance`, store.getUserWithLargestAccountBalance());
-    // logger.log(`User with smallest account balance`, store.getUserWithSmallestAccountBalance());
-    // logger.log(`User with smallest positive account balance`, store.getUserWithSmallestPositiveAccountBalance());
-    // logger.log(`User with largest negative account balance`, store.getUserWithLargestNegativeAccountBalance());
 }
