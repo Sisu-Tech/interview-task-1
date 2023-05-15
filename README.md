@@ -1,2 +1,14 @@
-# interview-task-1
-Interview Task 1
+# interview-task
+
+Install packages:
+```
+pnpm install
+```
+
+Run task:
+```
+pnpm start
+```
+
+Only edit `src/todo.mts` file.
+

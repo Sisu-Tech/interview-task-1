@@ -1,0 +1,47 @@
+{
+    "name": "interview-task-1",
+    "description": "Interview Task 1",
+    "version": "0.0.1",
+    "scripts": {
+        "format": "scripty",
+        "lint": "scripty",
+        "start": "scripty"
+    },
+    "dependencies": {
+        "lodash-es": "^4.17.21"
+    },
+    "devDependencies": {
+        "@types/eslint": "^8.21.3",
+        "@types/lodash-es": "^4.17.7",
+        "@types/node": "^18.15.10",
+        "@types/prettier": "^2.7.2",
+        "@typescript-eslint/eslint-plugin": "^5.56.0",
+        "@typescript-eslint/parser": "^5.56.0",
+        "eslint": "^8.36.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-import-resolver-typescript": "^3.5.5",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-n": "^15.6.1",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-promise": "^6.1.1",
+        "eslint-plugin-simple-import-sort": "^10.0.0",
+        "prettier": "^2.8.7",
+        "rimraf": "^5.0.0",
+        "scripty": "^2.1.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.0.2"
+    },
+    "config": {
+        "scripty": {
+            "path": "../../scripts",
+            "windowsPath": "../../scripts"
+        }
+    },
+    "engines": {
+        "pnpm": ">=8.0 <9.0",
+        "node": ">=18.9.1 <19.0.0"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "type": "module"
+}
