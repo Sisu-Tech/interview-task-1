@@ -1,14 +1,12 @@
-# interview-task
+# interview-task-1
 
-Install packages:
-```
-pnpm install
-```
+After cloning the repository:
+* Make sure you have `pnpm` installed globally (`npm install -g pnpm`)
+* Install packages by running `pnpm install`
 
-Run task:
-```
-pnpm start
-```
+Tasks can be found in `./src/todo.mts` file and it's the only file you should edit as part of this task.
+* Execute code by running `pnpm start` 
 
-Only edit `src/todo.mts` file.
+
+
 
