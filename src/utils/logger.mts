@@ -1,3 +1,7 @@
+// #####################################
+// # DONT CHANGE ANYTHING IN THIS FILE #
+// #####################################
+
 let isLogginEnabled = true;
 
 export const logger = {

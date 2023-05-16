@@ -1,3 +1,7 @@
+// #####################################
+// # DONT CHANGE ANYTHING IN THIS FILE #
+// #####################################
+
 export interface User {
     id: string;
     username: string;
