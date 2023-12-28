@@ -1,4 +1,4 @@
 #!/bin/bash
 
-eslint .
+eslint --fix .
 ts-node --esm src/index.mts

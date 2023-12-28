@@ -10,16 +10,15 @@ const store = await getStore();
 const executionTimes: number[] = [];
 logger.disable();
 
-Array(50)
-    .fill(null)
-    .forEach(() => {
-        const startTime = analytics.getStartTime();
-        task(store);
-        executionTimes.push(analytics.getExecutionTimeInMs(startTime));
-    });
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+for (let i = 0; i < 50; i++) {
+    const startTime = analytics.getStartTime();
+    await task(store);
+    executionTimes.push(analytics.getExecutionTimeInMs(startTime));
+}
 
 logger.enable();
-task(store);
+await task(store);
 
 console.log();
 console.log(wrapTextInBox(`✅  Task completed in average in ${analytics.getAverageExecutionTimeInMs(executionTimes)}ms`));

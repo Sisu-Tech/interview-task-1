@@ -2,9 +2,9 @@
 
 ## After cloning the repository:
 
--   Make sure you have some version of NodeJS 18 installed. `nvm install 18.16.0`
--   Make sure you have `pnpm` installed globally. `npm install -g pnpm`
--   Install packages by running `pnpm install`.
+-   Make sure you have **NodeJS** _>=16.0.0 <18.19.0_ installed `nvm install 18.18.2`
+-   Install packages by running `npm install`
+-   Turn off any AI based code completion in your IDE (CoPilot etc.) as we are not evaluating your ability to use AI based code completion tools. We are evaluating your ability to write code and solve problems.
 
 ## Task Description
 

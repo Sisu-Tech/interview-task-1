@@ -22,5 +22,9 @@ export interface UserProfile {
 export interface UserTransaction {
     userId: string;
     amount: number;
-    type: 'credit' | 'debit';
+    type: TransactionType;
+    currency: Currency;
 }
+
+export type Currency = 'EUR' | 'USD' | 'GBP';
+export type TransactionType = 'credit' | 'debit';
